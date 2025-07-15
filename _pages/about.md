@@ -15,7 +15,7 @@ redirect_from:
 
 ### Computer Science and Communications Engineering
 
-**Research on Mobile Communication**
+Research on Mobile Communication
 
 _Waseda University, Tokyo, Japan_
 
@@ -42,11 +42,9 @@ _2020-2024_
 
 ### Sketch Simplification via Human-Guided Sparse Edge Selection
 
-_July 2025 | OpenCV, Python, React_
+_July 2025 ｜ OpenCV, Python, React_
 
 This project explores an optimization-based approach to generate expressive, simplified sketches from complex images. Instead of relying on deep learning, the method is grounded in discrete optimization with direct human input — offering a balance between algorithmic control and user intent.
-
-<details><summary>Details...</summary>
 
 #### Objective
 
@@ -124,7 +122,7 @@ It’s especially suited for creative applications, visual abstraction, or educa
 
 ### Face Recognition Access Control System
 
-_Mar 2024 | STM32, C++_
+_Mar 2024 ｜ STM32, C++_
 
 Graduation project focused on embedded system development (hardware and software).
 
@@ -133,7 +131,7 @@ Graduation project focused on embedded system development (hardware and software
 
 ### Temperature & Pressure Monitoring System for Injection Wells
 
-_Dec 2023 | Qt, C++_
+_Dec 2023 ｜ Qt, C++_
 
 Course project for upper-computer application development.
 
@@ -142,7 +140,7 @@ Course project for upper-computer application development.
 
 ### Quiz Buzzer System Using STC89C52
 
-_Dec 2022 | STC89C52, C_
+_Dec 2022 ｜ STC89C52, C_
 
 Microcontroller application for embedded systems course.
 
@@ -151,7 +149,7 @@ Microcontroller application for embedded systems course.
 
 ### Exam System for International School
 
-_Apr 2022 | Vue, JavaScript_
+_Apr 2022 ｜ Vue, JavaScript_
 
 Frontend development for a collaborative exam platform project.
 
