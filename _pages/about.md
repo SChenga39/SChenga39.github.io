@@ -1,56 +1,159 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+## Introduction
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<!-- Self Introduction -->
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## Education
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+### Computer Science and Communications Engineering
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+**Research on Mobile Communication**
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+_Waseda University, Tokyo, Japan_
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+_2025-2027_
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+### Measurement, Control Technology and Instruments
 
-**Markdown generator**
+_Wuhan University of Technology, Wuhan, China_
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+_2020-2024_
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+## Skills
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+<!-- Image Example -->
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<!-- ![Editing a Markdown file for a talk](/images/editing-talk.png) -->
+
+- Programming: Python, C++, Java, Go
+- Software Development: Git, CI/CD
+- Computer Vision: OpenCV
+- GUI Design: Qt
+
+## Projects
+
+### Sketch Simplification via Human-Guided Sparse Edge Selection
+
+_July 2025 | OpenCV, Python, React_
+
+This project explores an optimization-based approach to generate expressive, simplified sketches from complex images. Instead of relying on deep learning, the method is grounded in discrete optimization with direct human input — offering a balance between algorithmic control and user intent.
+
+<details><summary>Details...</summary>
+
+#### Objective
+
+The core goal is to extract a **sparse and interpretable edge sketch** from a detailed image while preserving semantically important content. Users manually mark important areas (like faces, objects, etc.), and the system then selects a subset of edge segments that best represent those priorities — under a strict complexity constraint.
+
+We formulate the problem as a **binary optimization** task:
+
+$$
+\max_{\mathbf{x} \in \{0,1\}^n} \sum_{i=1}^n w_i x_i \quad \text{s.t.} \quad \sum_{i=1}^n x_i \leq k
+$$
+
+Where:
+
+- $x_i$ is a binary variable indicating whether to keep edge segment $e_i$
+- $w_i$ is a weight (importance) derived from gradient strength and user annotations
+- $k$ is the maximum number of edges allowed (sketch sparsity budget)
+
+#### ️ Implementation Overview
+
+I implemented this project using **Python + OpenCV** for the backend and **React** for the frontend interface.
+
+#### Backend (Python OpenCV)
+
+Key backend responsibilities include:
+
+- **Edge Detection**: Using Canny to extract all potential edges.
+- **Gradient Analysis**: Calculating edge strength and direction via Sobel operators.
+- **User-Guided Scoring**: Incorporating user-defined importance using masks (e.g. must-keep, must-remove).
+- **Optimization Loop**: Greedy selection of top-weighted edges within the user-defined budget, with penalties for redundant (parallel) edges and rewards for connectivity.
+
+The optimization runs asynchronously in a background thread, allowing real-time UI feedback during interaction.
+
+> Edge selection is influenced by a custom energy function considering gradient magnitude, neighborhood connectivity, and angular diversity — all hand-engineered without deep learning.
+
+#### Frontend (React)
+
+The frontend is a web-based interface that enables users to:
+
+- **Upload an image**
+- **Visualize Canny edge maps**
+- **Draw masks** over important or unimportant regions via simple brush tools
+- **Adjust parameters** like Canny thresholds and budget ratio using sliders
+- **Preview final sketch output** after optimization
+
+User actions are sent to the backend over HTTP, where the Python service processes the image and returns the updated sketch.
+
+> User constraints are enforced via simple keyboard shortcuts (e.g., `K` for keep, `R` for remove), making the experience interactive and efficient.
+
+#### Why It Matters
+
+Unlike traditional sketch filters or learning-based simplifiers, this approach:
+
+- Gives **explicit control** to the user
+- Makes the logic **interpretable and tweakable**
+- Works **offline**, without requiring large datasets or GPU support
+
+It’s especially suited for creative applications, visual abstraction, or educational tools where clarity and human judgment are key.
+
+#### Demo Workflow
+
+1. Load an image into the frontend.
+2. Use a brush tool to mark important (green) or unimportant (red) regions.
+3. Adjust edge detection parameters and sparsity ratio as desired.
+4. Let the system generate a sketch that reflects your priorities.
+5. Save or further refine the result!
+
+#### Tech Stack
+
+- **Frontend**: React, HTML Canvas, Fetch API
+- **Backend**: Python, OpenCV, NumPy, Matplotlib (for GUI)
+- **Optimization Method**: Greedy selection based on weighted importance score
+- **Image Communication**: HTTP + base64-encoded image buffers
+
+</details>
+
+### Face Recognition Access Control System
+
+_Mar 2024 | STM32, C++_
+
+Graduation project focused on embedded system development (hardware and software).
+
+- Developed a secure access control system with facial recognition, card swipe, and password unlock functions
+- Added card swipe logging and intrusion detection with automatic image capture
+
+### Temperature & Pressure Monitoring System for Injection Wells
+
+_Dec 2023 | Qt, C++_
+
+Course project for upper-computer application development.
+
+- Collected and visualized real-time data from embedded devices using Qt GUI components
+- Stored historical data in a local SQLite database
+
+### Quiz Buzzer System Using STC89C52
+
+_Dec 2022 | STC89C52, C_
+
+Microcontroller application for embedded systems course.
+
+- Designed a 4-player quiz buzzer with conflict-free matrix keypad input
+- Included system reset functionality
+
+### Exam System for International School
+
+_Apr 2022 | Vue, JavaScript_
+
+Frontend development for a collaborative exam platform project.
+
+- Modified the user interface to meet the client’s requirements
+- Integrated a video player component and adjusted the playback strategy to ensure each video can be played once and only once
