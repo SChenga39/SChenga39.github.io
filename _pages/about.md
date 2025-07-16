@@ -42,31 +42,9 @@ _2020-2024_
 
 ### Sketch Simplification via Human-Guided Sparse Edge Selection
 
-_July 2025 ｜ OpenCV, Python, React_
+_July 2025 ｜ OpenCV, Python (Flask), React_
 
 This project explores an optimization-based approach to generate expressive, simplified sketches from complex images. Instead of relying on deep learning, the method is grounded in discrete optimization with direct human input — offering a balance between algorithmic control and user intent.
-
-#### Objective
-
-The core goal is to extract a **sparse and interpretable edge sketch** from a detailed image while preserving semantically important content. Users manually mark important areas (like faces, objects, etc.), and the system then selects a subset of edge segments that best represent those priorities — under a strict complexity constraint.
-
-We formulate the problem as a **binary optimization** task:
-
-$$
-\max_{\mathbf{x} \in \{0,1\}^n} \sum_{i=1}^n w_i x_i \quad \text{s.t.} \quad \sum_{i=1}^n x_i \leq k
-$$
-
-Where:
-
-- $x_i$ is a binary variable indicating whether to keep edge segment $e_i$
-- $w_i$ is a weight (importance) derived from gradient strength and user annotations
-- $k$ is the maximum number of edges allowed (sketch sparsity budget)
-
-#### ️ Implementation Overview
-
-I implemented this project using **Python + OpenCV** for the backend and **React** for the frontend interface.
-
-#### Backend (Python OpenCV)
 
 Key backend responsibilities include:
 
@@ -79,8 +57,6 @@ The optimization runs asynchronously in a background thread, allowing real-time 
 
 > Edge selection is influenced by a custom energy function considering gradient magnitude, neighborhood connectivity, and angular diversity — all hand-engineered without deep learning.
 
-#### Frontend (React)
-
 The frontend is a web-based interface that enables users to:
 
 - **Upload an image**
@@ -92,33 +68,6 @@ The frontend is a web-based interface that enables users to:
 User actions are sent to the backend over HTTP, where the Python service processes the image and returns the updated sketch.
 
 > User constraints are enforced via simple keyboard shortcuts (e.g., `K` for keep, `R` for remove), making the experience interactive and efficient.
-
-#### Why It Matters
-
-Unlike traditional sketch filters or learning-based simplifiers, this approach:
-
-- Gives **explicit control** to the user
-- Makes the logic **interpretable and tweakable**
-- Works **offline**, without requiring large datasets or GPU support
-
-It’s especially suited for creative applications, visual abstraction, or educational tools where clarity and human judgment are key.
-
-#### Demo Workflow
-
-1. Load an image into the frontend.
-2. Use a brush tool to mark important (green) or unimportant (red) regions.
-3. Adjust edge detection parameters and sparsity ratio as desired.
-4. Let the system generate a sketch that reflects your priorities.
-5. Save or further refine the result!
-
-#### Tech Stack
-
-- **Frontend**: React, HTML Canvas, Fetch API
-- **Backend**: Python, OpenCV, NumPy, Matplotlib (for GUI)
-- **Optimization Method**: Greedy selection based on weighted importance score
-- **Image Communication**: HTTP + base64-encoded image buffers
-
-</details>
 
 ### Face Recognition Access Control System
 
