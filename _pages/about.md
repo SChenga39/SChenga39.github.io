@@ -40,38 +40,18 @@ _2020-2024_
 
 ## Projects
 
-### Sketch Simplification via Human-Guided Sparse Edge Selection
+### Human-Guided Sketch Simplification System
 
-_July 2025 ｜ OpenCV, Python (Flask), React_
+_July 2025 \| Python, OpenCV, NumPy_
 
-This project explores an optimization-based approach to generate expressive, simplified sketches from complex images. Instead of relying on deep learning, the method is grounded in discrete optimization with direct human input — offering a balance between algorithmic control and user intent.
+Team project (3 members) for Computer Graphics Optimization course.
 
-Key backend responsibilities include:
-
-- **Edge Detection**: Using Canny to extract all potential edges.
-- **Gradient Analysis**: Calculating edge strength and direction via Sobel operators.
-- **User-Guided Scoring**: Incorporating user-defined importance using masks (e.g. must-keep, must-remove).
-- **Optimization Loop**: Greedy selection of top-weighted edges within the user-defined budget, with penalties for redundant (parallel) edges and rewards for connectivity.
-
-The optimization runs asynchronously in a background thread, allowing real-time UI feedback during interaction.
-
-> Edge selection is influenced by a custom energy function considering gradient magnitude, neighborhood connectivity, and angular diversity — all hand-engineered without deep learning.
-
-The frontend is a web-based interface that enables users to:
-
-- **Upload an image**
-- **Visualize Canny edge maps**
-- **Draw masks** over important or unimportant regions via simple brush tools
-- **Adjust parameters** like Canny thresholds and budget ratio using sliders
-- **Preview final sketch output** after optimization
-
-User actions are sent to the backend over HTTP, where the Python service processes the image and returns the updated sketch.
-
-> User constraints are enforced via simple keyboard shortcuts (e.g., `K` for keep, `R` for remove), making the experience interactive and efficient.
+- Designed and implemented an interactive sketch simplification pipeline combining Canny edge detection with human-annotated importance regions
+- Developed custom energy functions and an Iterated Simulated Annealing algorithm to generate sparse yet visually meaningful sketches
 
 ### Face Recognition Access Control System
 
-_Mar 2024 ｜ STM32, C++_
+_Mar 2024 \| STM32, C++_
 
 Graduation project focused on embedded system development (hardware and software).
 
@@ -80,7 +60,7 @@ Graduation project focused on embedded system development (hardware and software
 
 ### Temperature & Pressure Monitoring System for Injection Wells
 
-_Dec 2023 ｜ Qt, C++_
+_Dec 2023 \| Qt, C++_
 
 Course project for upper-computer application development.
 
@@ -89,7 +69,7 @@ Course project for upper-computer application development.
 
 ### Quiz Buzzer System Using STC89C52
 
-_Dec 2022 ｜ STC89C52, C_
+_Dec 2022 \| STC89C52, C_
 
 Microcontroller application for embedded systems course.
 
@@ -98,7 +78,7 @@ Microcontroller application for embedded systems course.
 
 ### Exam System for International School
 
-_Apr 2022 ｜ Vue, JavaScript_
+_Apr 2022 \| Vue, JavaScript_
 
 Frontend development for a collaborative exam platform project.
 
